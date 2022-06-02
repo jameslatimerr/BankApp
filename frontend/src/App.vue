@@ -1,14 +1,11 @@
 <template>
-  <div id="nav">
-    <h1> {{this.msg}} </h1>
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
-    <button @click="SetMessage"> Set message</button>
+  <div>
   </div>
-  <!-- <router-view/> -->
+  <router-view/> 
 </template>
 
 <script>
+import Bootstrap from 'bootstrap'
 import axios from 'axios';
 export default {
   data() {
@@ -18,7 +15,7 @@ export default {
   },
   methods : {
     SetMessage: function() {
-     const path = 'http://localhost:5000/ping';
+     const path = 'http://localhost:5000/';
       axios.get(path)
         .then((res) => {
           this.msg = res.data;
