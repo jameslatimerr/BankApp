@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1> Whats up guys </h1>
-        <button> james </button>
+        <button class="btn"> james </button>
     </div>
 </template>
 <script>
